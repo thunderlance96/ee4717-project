@@ -1,0 +1,309 @@
+/*Basic Design*/
+button {
+	background-color: #b8b2a3;
+	border:0px; 
+	border-radius:5px;
+	color: #6e3109;
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px 30px;
+	padding: 10px;
+	text-align: center;
+	width: 120px;
+  }
+  button:hover {
+	background-color: #b3a789;
+  }
+  .nav1{
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 10px;
+	  margin-bottom:20px;
+  }
+  .nav2{
+	  text-align: center;
+	  
+	  margin-bottom: 50px;
+	  text-decoration: none
+	}
+  a { 
+	  text-decoration:none;
+	  color: #6e3109;
+  }
+  .footer {
+	  background: #ccc4ad;
+	  font-size: 70%;
+	  font-style: italic;
+	  text-align: center;
+	  padding: 20px 0px 20px 0px;
+	  margin-top: 50px;
+	  height: 100px;
+  }
+  .wrapper { 	
+	  width: 90%;
+	  margin: auto;
+	  min-width: 850px;
+	  font-size: 20px;
+  }
+  
+  /*Common Use*/
+  .text-center {
+	  text-align: center;
+  }
+  .imagetitle {
+	  display: block;
+	  margin: 20px auto 0px;
+	  width: 50%;
+	}
+  /*Home Page*/
+  .imagehomebreadcenter {
+	  display: block;
+	  margin: 0px auto 40px;
+  }
+  .homepara { 
+	  text-align: justify;
+		 text-justify: inter-word;
+	  margin: 20px 100px 20px 100px;  
+	  padding: 0px 80px 0px 80px;
+  }
+  /*Menu Page*/
+  .flip-card {
+	  background-color: transparent;
+	  width: 300px;
+	  height: 300px;
+	  border: none;
+	  perspective: 1000px;
+	  margin-top: 0px;
+	  margin-bottom: 50px;
+	  float:left
+	}
+	.flip-card-inner {
+	  position: relative;
+	  width: 300px;
+	  height: 300px;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+	
+	.flip-card:hover .flip-card-inner {
+	  transform: rotateY(180deg);
+	}
+	.flip-card-front, .flip-card-back {
+	  position: absolute;
+	  width: 300px;
+	  height: 300px;
+	  -webkit-backface-visibility: hidden; 
+	  backface-visibility: hidden;
+	}
+	
+	.flip-card-front {
+	  background-color: #e9e0cc;
+	  color:#6e3109;
+	  width: 300px;
+	  height: 300px;
+	  padding-top: 30px;
+	}
+	.flip-card-back {
+	  background-color:  #e9e0cc;
+	  color: #6e3109;
+	  transform: rotateY(180deg);
+	  padding-bottom: 30px;
+	}
+	.flip-card-back button {
+	  border: none;
+	  outline: 0;
+	  padding: 12px;
+	  color: #6e3109;
+	  background-color: #d4cdbd;
+	  text-align: center;
+	  cursor: pointer;
+	  width: 150px;
+	  font-size: 16px;
+	}
+	.flip-card-back button:hover {
+	  opacity: 0.7;
+	}
+	#menuinput{
+	  width: 50px;
+	  height: 35px;
+	  margin-left: 150px;
+  }
+  #menuimage {
+	  width:200px;
+	  height:200px;
+	  margin-bottom: 5px;
+	  margin-top: 20px;
+  }
+  #menupara {
+	  text-align: justify;
+		 text-justify: inter-word;
+	  padding: 0px 50px 0px 50px;
+  }
+  .menurow {
+	  margin-top: auto;
+	  display: block;
+  }
+  .menurow:after {
+	clear: left;
+  }
+  
+  /*Cart Page*/
+  .cartcenter {
+	margin-left: auto;
+	margin-right: auto;
+  }
+ 
+  #cartright { 
+	  margin-left: 50px; 
+	  margin-right: 50px;
+	  text-align: center;
+	  height:350px;
+	  /* background-color: #DDFFCC; */
+  } 
+#SDqty {
+	width:100px;
+	margin: auto;
+}
+#KAqty{
+	width:100px;
+	margin: auto;
+} #FCqty{
+	width:100px;
+	margin: auto;
+}
+.cartcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+	
+  /*Contact Page*/
+  .contactpara {
+	  text-align: center;
+	  margin: 0px 200px 20px 200px;
+	  padding: 0px 80px 0px 80px;
+  }
+  #contactform {
+	  text-align: center;
+	  padding: 20px 20px 20px 20px;
+	  margin-left: 150px;
+	  margin-right: 150px;
+	  
+  }
+  label {
+	  float: left;
+	  padding-right: 40px;
+	  text-align: right;
+	  width: 120px;	
+  }
+  input, textarea {
+	  display: block;
+	  margin-bottom: 20px;
+	  width: 500px;
+	  border-radius: 5px;
+  }
+  #submit {
+	  background-color: #b8b2a3;
+	  border:0px;
+	  color: #6e3109;
+	  font-size: 20px;
+	  margin-top: 40px;
+	  margin-bottom: 0px;
+	  padding: 10px;
+	  text-align: center;
+	  width: 100px;
+  }
+  /*About Page*/
+  .aboutpara { 
+	  text-align: justify;
+		 text-justify: inter-word;
+	  margin: 0px 100px 40px 100px;
+	  padding: 0px 80px 0px 80px;
+  }
+  .row {
+	  display: flex;
+	}
+  .column {
+	  flex: 50%;
+	  padding: 10px;
+	  height: 200px;
+	}
+  #aboutleft {display: block;
+	  margin-left: 170px;
+	  margin-right: 0px;
+	  width: 50%;}
+  
+  #aboutright {display: block;
+	  margin-left: 0 px;
+	  margin-right: 150px;
+	  width: 50%;}
+  
+  
+  /*Confirmation Page*/
+  .confirmationorder{
+	  background-color: lightblue;
+	  width: 200px;
+	  padding: 25px;
+	  border: 2px black;
+	  margin: 25px;
+	  }
+  .confirmationtop{
+	  background-color: #FFCCCC; 
+	  width:auto;
+	  height:200px;
+	  text-align: center;
+  }
+  .confirmationmid{
+	  background-color: #DDFFCC; 
+	  width:auto;
+	  height:150px;
+	  text-align: center;
+	  }
+  .confirmationbtm{
+	  background-color: #CCFFFF; 
+	  width:auto;
+	  height:200px;
+	  text-align: center;
+	  }
+  /*Delivery Page*/
+  .deliveryrow {
+	flex-wrap: wrap;
+  }
+  .col-50 {
+	flex: 50%;
+  } 
+  .col-75 {
+	-ms-flex: 75%; /* IE10 */
+	flex: 75%;
+  }
+  .col-50,
+  .col-75 {
+	padding: 0 16px;
+  }
+  .container {
+	background-color: #e4ded2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	width: 40%;
+	margin-left:auto;
+	margin-right: auto;
+  }
+  input[type=text] {
+	width: 40%;
+	margin-bottom: 10px;
+	height: 10px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+  label {
+	margin-bottom: 10px;
+	display: block;
+}
+  #deliverybutton {
+	  margin-left:143px;
+	  margin-right:100px; 
+	  margin-top:50px;
+}
+  
