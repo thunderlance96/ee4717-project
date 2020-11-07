@@ -1,3 +1,21 @@
+<?php
+    include 'dbFunction.php';
+
+    $query1 = "Select * from item where name= 'Sourdough Classic'";
+    $query2 = "Select * from item where name= 'Kouign Amann'";
+    $query3 = "Select * from item where name= 'French Crepe'";
+
+    $resultSelect1 = mysqli_query($link, $query1) or die("Error Querying Database");
+    $resultSelect2 = mysqli_query($link, $query2) or die("Error Querying Database");
+    $resultSelect3 = mysqli_query($link, $query3) or die("Error Querying Database");
+   
+    
+    $num_result1 = mysqli_num_rows($resultSelect1);
+    $num_result2 = mysqli_num_rows($resultSelect2);
+    $num_result3 = mysqli_num_rows($resultSelect3);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
